@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优化QQ注册表单</title>
+</head>
+<body>
+<div id="haoma-inner">注册帐号</div>
+<form method="post">
+    <div id="formArea">
+        <div id="name">
+            <label>昵称</label>
+            <input type="text" class="new_txt" id="nick" tabindex="6" maxlength="24" autocomplete="off">
+            <label id="nick_info" class="error">昵称不可以为空</label>
+        </div>
+        <div id="mima">
+            <label class="item" for="password">密码</label>
+            <input type="password" class="new_txt" id="password" name="password" tabindex="7" maxlength="16">
+           <div class="info pwd_info">
+            <ul class="pwd_tips"id="pwd_tips">
+           <li class="default" id="pwd_tip1">
+               长度为6-16个字符
+           </li>
+                <li class="default" id="pwd_tip3">不能包含空格</li>
+                <li class="default" id="pwd_tip2">不能是9位以下纯数字</li>
+           </ul>
+            <label id="password_pic" class="rankLow">弱</label>
+           </div>
+        </div>
+        <div>
+            <label class="item" for="password_again">确认密码</label>
+            <input type="password" class="new_txt"id="password_again" tabindex="8" maxlength="16">
+            <div class="info">
+                <label id="password_again_info" class="error">请再次输入密码</label>
+            </div>
+        </div>
+        <div class="sex">
+            <label>性别</label>
+            <a name="male" id="sex_1" class="checked" tabindex="9">男</a>
+            <a id="sex_2" class="unchecked" name="femail" tabindex="10">女</a>
+        </div>
+        <div class="birthday">
+            <label>生日</label>
+            <div id="birthday-type">
+            <a href="javascript:void(0)" id="birthday_type_value" class="value_box              " tabindex="11">农历</a>
+            <ul id="birthday_type_ul" class="hide">
+                <li id="birthday_0" value="0" class="">公历</li>
+                <li id="birthday_1" value="1" class="">农历</li>
+            </ul>
+            </div>
+            <div id="year">
+                <input id="year_value" class="year_value" tabindex="12" value="年" maxlength="10" autocomplete="off">
+            </div>
+            <div id="month">
+                <input id="month_value" class="month_value" tabindex="13" value="月" maxlength="4" autocomplete="off">
+            </div>
+            <div id="day">
+                <input id="day_value" class="day_value" tabindex="14" value="日" maxlength="4" autocomplete="off">
+            </div>
+        </div>
+        <div id="place">
+            <label>所在地</label>
+            <div id="country_box">
+                <div id="country_value_bg" class="area_value_bg">
+                    <input type="text" id="country_value" class="country_value" tabindex="15" maxlength="20" autocomplete="off">
+                </div>
+                <ul id="country_ul" class="hide">
+                    <li value="1" id="country_0">中国</li>
+                    <li value="ALB" id="country_1">阿尔巴尼亚</li>
+                </ul>
+            </div>
+            <div id="province_value_bg" class="area_value_bg">
+                <input type="text" id="province_value" class="province_value" tabindex="16" maxlength="20" autocomplete="off">
+
+            <ul>
+                <li>
+                </li>
+            </ul>
+            </div>
+        <div id="city_value_bg" class="area_value_bg">
+            <input type="text" id="city_value" class="city_value" tabindex="17" maxlength="20" autocomplete="off">
+            <ul>
+                <li>
+                </li>
+            </ul>
+
+        </div>
+        </div>
+        <div id="phone">
+            <label id="num">手机号码</label>
+            <input id="phone_num" type="text" class="new_txt" name="phone_num" tabindex="20" autocomplete="off">
+        </div>
+        <div class="submit" style="padding-top:10px">
+            <input type="button" value="立即注册" title="立即注册" tabindex="23" id="submit" onclick="index.submit()">
+        </div>
+    </div>
+</body>
+</html>
